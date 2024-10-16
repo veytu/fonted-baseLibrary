@@ -1,4 +1,4 @@
-import { parseHashUrlQuery  } from './utils';
+import { parseHashUrlQuery  } from '../src/utils';
 
 //测试用例
 test('parseHashUrlQuery test',()=>{

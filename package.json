@@ -9,7 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack",
     "generate:umd": "cross-env NODE_ENV=production OUTPUT_TYPE=umd webpack --config ./webpack.config.js",
     "generate:esm": "cross-env NODE_ENV=production OUTPUT_TYPE=esm webpack --config ./webpack.config.js",
-    "test": "jest ./src/index.test.ts"
+    "test": "jest ./test/index.test.ts"
   },
   "author": "",
   "license": "ISC",
