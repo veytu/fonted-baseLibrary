@@ -1,0 +1,35 @@
+{
+  "name": "fonted-baselibrary",
+  "version": "1.0.0",
+  "description": "前台通用工具库",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development npx webpack serve",
+    "build": "cross-env NODE_ENV=production webpack",
+    "generate:umd": "cross-env NODE_ENV=production OUTPUT_TYPE=umd webpack --config ./webpack.config.js",
+    "generate:esm": "cross-env NODE_ENV=production OUTPUT_TYPE=esm webpack --config ./webpack.config.js",
+    "test": "jest ./src/index.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@types/jest": "^29.5.13",
+    "@types/lodash": "^4.17.10",
+    "babel-loader": "^9.2.1",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

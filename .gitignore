@@ -1,0 +1,8 @@
+node_modules
+dist
+lib
+*.tsbuildinfo
+.env
+.vscode/
+package-lock.json
+yarn.lock
